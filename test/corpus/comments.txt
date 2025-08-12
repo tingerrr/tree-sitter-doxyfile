@@ -1,0 +1,22 @@
+===================
+Comments Everywhere
+===================
+
+# foo
+  # bar
+_ = YES
+    # zir
+
+---
+
+(doxyfile
+  (comment
+    (comment_body))
+  (comment
+    (comment_body))
+  (option
+    (identifier)
+    (literal
+      (boolean)))
+  (comment
+    (comment_body)))

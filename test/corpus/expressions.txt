@@ -1,0 +1,44 @@
+================
+Empty Expression
+================
+
+_ =
+
+---
+
+(doxyfile
+  (option
+    (identifier)))
+
+===============
+List Expression
+===============
+
+_ = "Foo Bar" Qux
+
+---
+
+(doxyfile
+  (option
+    (identifier)
+    (literal
+      (quoted_string))
+    (literal
+      (unquoted_string))))
+
+====================
+Continued Expression
+====================
+
+_ = "Foo Bar" \
+    Qux-Zir
+
+---
+
+(doxyfile
+  (option
+    (identifier)
+    (literal
+      (quoted_string))
+    (literal
+      (unquoted_string))))
