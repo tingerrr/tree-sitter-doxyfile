@@ -1,0 +1,22 @@
+name: Continuous integration
+
+# Only run when triggered or on pull request to main
+on:
+  pull_request: { branches: main }
+  workflow_dispatch:
+
+jobs:
+  tests:
+    name: tree-sitter tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install tree-sitter
+        uses: tree-sitter/setup-action@v2
+        with:
+          install-lib: false
+
+      - name: Run tree-sitter tests
+        run: tree-sitter test
