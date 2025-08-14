@@ -76,23 +76,35 @@
           "type": "FIELD",
           "name": "value",
           "content": {
-            "type": "REPEAT",
-            "content": {
-              "type": "CHOICE",
-              "members": [
-                {
-                  "type": "SYMBOL",
-                  "name": "_ENL"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "literal"
-                }
-              ]
-            }
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "value"
+              },
+              {
+                "type": "BLANK"
+              }
+            ]
           }
         }
       ]
+    },
+    "value": {
+      "type": "REPEAT1",
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "name": "_ENL"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "literal"
+          }
+        ]
+      }
     },
     "identifier": {
       "type": "PATTERN",

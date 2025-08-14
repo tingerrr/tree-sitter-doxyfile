@@ -21,10 +21,11 @@ _ = "Foo Bar" Qux
 (doxyfile
   (option
     (identifier)
-    (literal
-      (quoted_string))
-    (literal
-      (unquoted_string))))
+    (value
+      (literal
+        (quoted_string))
+      (literal
+        (unquoted_string)))))
 
 ====================
 Continued Expression
@@ -38,7 +39,8 @@ _ = "Foo Bar" \
 (doxyfile
   (option
     (identifier)
-    (literal
-      (quoted_string))
-    (literal
-      (unquoted_string))))
+    (value
+      (literal
+        (quoted_string))
+      (literal
+        (unquoted_string)))))
