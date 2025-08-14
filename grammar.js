@@ -34,8 +34,9 @@ module.exports = grammar({
     option: $ => seq(
       field('key', $.identifier),
       choice('+=', '='),
-      field('value', repeat(choice($._ENL, $.literal))),
+      field('value', optional($.value)),
     ),
+    value: $ => repeat1(choice($._ENL, $.literal)),
 
     identifier: _ => /[_a-zA-Z][_a-zA-Z0-9]*/,
 

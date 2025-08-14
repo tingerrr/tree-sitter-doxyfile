@@ -82,23 +82,30 @@
         ]
       },
       "value": {
-        "multiple": true,
+        "multiple": false,
         "required": false,
         "types": [
           {
-            "type": "\n",
-            "named": false
-          },
-          {
-            "type": "\\",
-            "named": false
-          },
-          {
-            "type": "literal",
+            "type": "value",
             "named": true
           }
         ]
       }
+    }
+  },
+  {
+    "type": "value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "literal",
+          "named": true
+        }
+      ]
     }
   },
   {

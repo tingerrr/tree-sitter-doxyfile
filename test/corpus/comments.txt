@@ -16,7 +16,8 @@ _ = YES
     (comment_body))
   (option
     (identifier)
-    (literal
-      (boolean)))
+    (value
+      (literal
+        (boolean))))
   (comment
     (comment_body)))

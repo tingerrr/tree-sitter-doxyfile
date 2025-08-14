@@ -10,12 +10,14 @@ _ = NO
 (doxyfile
   (option
     (identifier)
-    (literal
-      (boolean)))
+    (value
+      (literal
+        (boolean))))
   (option
     (identifier)
-    (literal
-      (boolean))))
+    (value
+      (literal
+        (boolean)))))
 
 ==============
 Number Literal
@@ -28,8 +30,9 @@ _ = 42
 (doxyfile
   (option
     (identifier)
-    (literal
-      (number))))
+    (value
+      (literal
+        (number)))))
 
 =====================
 Quoted String Literal
@@ -42,8 +45,9 @@ _ = "foo bar, qux, 42"
 (doxyfile
   (option
     (identifier)
-    (literal
-      (quoted_string))))
+    (value
+      (literal
+        (quoted_string)))))
 
 ==============================
 Simple Unquoted String Literal
@@ -56,8 +60,9 @@ _ = Foo
 (doxyfile
   (option
     (identifier)
-    (literal
-      (unquoted_string))))
+    (value
+      (literal
+        (unquoted_string)))))
 
 ===============================
 Complex Unquoted String Literal
@@ -70,5 +75,6 @@ _ = FooBar-Qux_Quuz.Zir
 (doxyfile
   (option
     (identifier)
-    (literal
-      (unquoted_string))))
+    (value
+      (literal
+        (unquoted_string)))))
