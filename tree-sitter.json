@@ -10,7 +10,10 @@
         "Doxyfile"
       ],
       "injection-regex": "^[Dd]oxy(file|gen)$",
-      "class-name": "TreeSitterDoxyfile"
+      "class-name": "TreeSitterDoxyfile",
+      "highlights": "queries/highlights.scm",
+      "injections": "queries/injections.scm",
+      "tags": "queries/tags.scm"
     }
   ],
   "metadata": {
